@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}Tennis store - {% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tennis Academy</title>
+  <link rel="stylesheet" href="/static/wilson.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+</head>
+<body>
+    
+    <div class="container">
+      <div class="pricerow">
+        <div class="pricecol">
+          <p class="x">Junior</p>
+          <h3>$250<span>/Month</span></h3>
+          <ul>
+            <li>Juniors must be no more than 19 as of January, the 1st</li>
+          </ul>
+          <button>Enquire Now</button>
+        </div>
+
+        <div class="pricecol">
+          <p class="x">Individual</p>
+          <h3>$350<span>/Month</span></h3>
+          <ul>
+            <li>Save up to $90 while using our Individual program training</li>
+          </ul>
+          <button>Enquire Now</button>
+        </div>
+
+        <div class="pricecol">
+          <p class="x">Group</p>
+          <h3>$500<span>/Month</span></h3>
+          <ul>
+            <li>Enjoy group trainings where competition is top priority</li>
+          </ul>
+          <button>Enquire Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="commentbox">
+      <div id="error"></div>
+      <h3>Leave us a comment</h3>
+      <form id="form" class="commentform" method="get">
+        <input type="name" id="name" placeholder="Enter name">
+        <input type="email" id="email" placeholder="Enter email">
+        <textarea rows="5" id="msg" placeholder="Leave us your input"></textarea>
+        <button type="submit" class="button stylebutton" onclick="message()">Submit</button>
+        <div class="messagebox">
+          <div class="success" id="success">
+            Your message has been successfully sent!
+          </div>
+          <div class="danger" id="danger">
+            Fields cannot be empty!
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <section class="freq">
+      <h2 class="faqtitle">FAQ</h2>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is ...</h3>
+
+          <svg width="15" height= "10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
+          </svg>
+
+        </div>
+        <div class="answer">
+          <p class="questionans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto laborum beatae hic quas, similique necessitatibus temporibus sint corrupti nam blanditiis sunt porro eos omnis perferendis voluptatum unde iste a?</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is ...</h3>
+
+          <svg width="15" height= "10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
+          </svg>
+
+        </div>
+        <div class="answer">
+          <p class="questionans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam laboriosam delectus consequuntur magnam, sed nisi, libero officiis omnis, iste sunt? Atque praesentium in velit voluptates autem, iusto quas tenetur!</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is ...</h3>
+
+          <svg width="15" height= "10" viewBox="0 0 42 25" onclick="">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
+          </svg>
+
+        </div>
+        <div class="answer">
+          <p class="questionans">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus blanditiis officia expedita ullam nemo ea corrupti explicabo vero perspiciatis, natus maiores repellendus unde obcaecati iure molestiae? Minima possimus facilis obcaecati?</p>
+        </div>
+      </div>
+    </section>
+  
+    
+
+
+
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>The Tennis Academy was established with the philosophy of creating a new direction in local tennis coaching and junior tennis development.<br>
+          We impart advanced techniques & tactics in tennis, coupled with FUN and guaranteed improvement.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <a href="https://instagram.com/translucien?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <button class="totop" onclick="totop()"><i class="fa fa-angle-double-up"></i></button>
+      
+      </section>
+
+
+
+    </section>
+    <script>
+      var nav1 = document.getElementById("nav1");
+      function showMenu(){
+        nav1.style.right = "0";
+      }
+      function hideMenu(){
+        nav1.style.right = "-200px";
+      }
+      const totop = () => window.scrollTo({top:0, behavior:"smooth"});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/formhandlertraining.js"></script>
+</body>
+</html>
+{% endblock %}
