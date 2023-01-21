@@ -14,112 +14,79 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   
 </head>
 <body>
-    
-    <div class="container">
-      <div class="pricerow">
-        <div class="pricecol">
-          <p class="x">Junior</p>
-          <h3>$250<span>/Month</span></h3>
-          <ul>
-            <li>Juniors must be no more than 19 as of January, the 1st</li>
-          </ul>
-          <button>Enquire Now</button>
-        </div>
-
-        <div class="pricecol">
-          <p class="x">Individual</p>
-          <h3>$350<span>/Month</span></h3>
-          <ul>
-            <li>Save up to $90 while using our Individual program training</li>
-          </ul>
-          <button>Enquire Now</button>
-        </div>
-
-        <div class="pricecol">
-          <p class="x">Group</p>
-          <h3>$500<span>/Month</span></h3>
-          <ul>
-            <li>Enjoy group trainings where competition is top priority</li>
-          </ul>
-          <button>Enquire Now</button>
-        </div>
+    <header>
+      <div class="nav container">
+        <p class="logo">Rackets</p>
       </div>
-    </div>
-    <div class="commentbox">
-      <div id="error"></div>
-      <h3>Leave us a comment</h3>
-      <form id="form" class="commentform" method="get">
-        <input type="name" id="name" placeholder="Enter name">
-        <input type="email" id="email" placeholder="Enter email">
-        <textarea rows="5" id="msg" placeholder="Leave us your input"></textarea>
-        <button type="submit" class="button stylebutton" onclick="message()">Submit</button>
-        <div class="messagebox">
-          <div class="success" id="success">
-            Your message has been successfully sent!
-          </div>
-          <div class="danger" id="danger">
-            Fields cannot be empty!
-          </div>
+    </header>
+    <section class="shop container">
+      <h2 class="section-title">Wilson Rackets</h2>
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 100L V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-      </form>
-    </div>
-
-    <section class="freq">
-      <h2 class="faqtitle">FAQ</h2>
-
-      <div class="faq">
-        <div class="question">
-          <h3>What is ...</h3>
-
-          <svg width="15" height= "10" viewBox="0 0 42 25">
-            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
-          </svg>
-
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 100 Pro V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-        <div class="answer">
-          <p class="questionans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto laborum beatae hic quas, similique necessitatibus temporibus sint corrupti nam blanditiis sunt porro eos omnis perferendis voluptatum unde iste a?</p>
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 98 V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-      </div>
-
-      <div class="faq">
-        <div class="question">
-          <h3>What is ...</h3>
-
-          <svg width="15" height= "10" viewBox="0 0 42 25">
-            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
-          </svg>
-
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 100UL v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 100UL v8</h2>
+          <span class="price">SGD 230</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-        <div class="answer">
-          <p class="questionans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam laboriosam delectus consequuntur magnam, sed nisi, libero officiis omnis, iste sunt? Atque praesentium in velit voluptates autem, iusto quas tenetur!</p>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 100UL v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 100L v8</h2>
+          <span class="price">SGD 230</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-      </div>
-
-      <div class="faq">
-        <div class="question">
-          <h3>What is ...</h3>
-
-          <svg width="15" height= "10" viewBox="0 0 42 25" onclick="">
-            <path d="M3 3L21 21L39 3" stroke="white" stroke-width= "7" stroke-1inecap="round "/>
-          </svg>
-
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 98 16x19 v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 98 16x19 v8</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
-        <div class="answer">
-          <p class="questionans">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus blanditiis officia expedita ullam nemo ea corrupti explicabo vero perspiciatis, natus maiores repellendus unde obcaecati iure molestiae? Minima possimus facilis obcaecati?</p>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 98 18x20 v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 98 18x20 v8</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Pro Staff 97UL v13.0.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Pro Staff 97UL v13.0</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Pro Staff 97L v13.0.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Pro Staff 97L v13.0</h2>
+          <span class="price">SGD 250</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
         </div>
       </div>
     </section>
-  
+    
     
 
-
-
-
-      <section class="footer">
+        <section class="footer">
         <h4>About Us</h4>
         <p>The Tennis Academy was established with the philosophy of creating a new direction in local tennis coaching and junior tennis development.<br>
           We impart advanced techniques & tactics in tennis, coupled with FUN and guaranteed improvement.</p>
@@ -129,7 +96,6 @@
           <a href="https://instagram.com/translucien?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
           <i class="fa fa-linkedin"></i>
         </div>
-        <button class="totop" onclick="totop()"><i class="fa fa-angle-double-up"></i></button>
       
       </section>
 
