@@ -73,13 +73,14 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: #171427;
-    color:#fff;
+    background-color: #fff;
+    color:#171427;
     padding: 10px;
     cursor: pointer;
   }
   .add-cart:hover{
     background: hsl(249,32%,17%);
+    color: #fff;
   }
   .nav{
     display: flex;
@@ -92,7 +93,6 @@ body{
     max-width: 1200px;
     margin: auto;
     width: 100%;
-    
   }
   
   .ftr{
