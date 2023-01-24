@@ -1,6 +1,112 @@
 {% extends "base.html" %}
-{% block title %}Tennis store - {% endblock %}
+{% block title %}Tennis store - Babolat{% endblock %}
 
 {% block content %}
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babolat</title>
+  <link rel="stylesheet" href="/static/babolat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  
+</head>
+<body>
+    <header class="hdr">
+      <div class="nav container">
+        <p class="logo">Rackets > Babolat</p>
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+      </div>
+    </header>
+    <section class="shop container">
+      <h2 class="section-title">Babolat Rackets</h2>
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 100L V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 100 Pro V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Clash 100L V2.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Clash 98 V2</h2>
+          <span class="price">SGD 270</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 100UL v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 100UL v8</h2>
+          <span class="price">SGD 230</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 100UL v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 100L v8</h2>
+          <span class="price">SGD 230</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 98 16x19 v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 98 16x19 v8</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Blade 98 18x20 v8.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Blade 98 18x20 v8</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Pro Staff 97UL v13.0.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Pro Staff 97UL v13.0</h2>
+          <span class="price">SGD 240</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="/static/img/Wilson Pro Staff 97L v13.0.png" alt="" class="product-img">
+          <h2 class="product-title">Wilson Pro Staff 97L v13.0</h2>
+          <span class="price">SGD 250</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <section class="ftr">
+        <h4>About Us</h4>
+        <p>The Tennis Academy was established with the philosophy of creating a new direction in local tennis coaching and junior tennis development.<br>
+          We impart advanced techniques & tactics in tennis, coupled with FUN and guaranteed improvement.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <a href="https://instagram.com/translucien?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </section>
+    <script>
+      var nav1 = document.getElementById("nav1");
+      function showMenu(){
+        nav1.style.right = "0";
+      }
+      function hideMenu(){
+        nav1.style.right = "-200px";
+      }
+      const totop = () => window.scrollTo({top:0, behavior:"smooth"});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/formhandlertraining.js"></script>
+</body>
+</html>
 {% endblock %}
