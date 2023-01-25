@@ -24,6 +24,14 @@ def yonex():
 def babolat():
     return render_template('babolat.html')
 
+@app.route('/menshoes')
+def menshoes():
+    return render_template('menshoes.html')
+
+@app.route('/womenshoes')
+def womenshoes():
+    return render_template('womenshoes.html')
+
 @app.route('/createUser', methods=['GET', 'POST'])
 def create_user():
     create_user_form = CreateUserForm(request.form)
