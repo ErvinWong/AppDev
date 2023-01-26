@@ -32,6 +32,14 @@ def menshoes():
 def womenshoes():
     return render_template('womenshoes.html')
 
+@app.route('/asicsshoe')
+def asicsshoe():
+    return render_template('asicsshoe.html')
+
+@app.route('/balls')
+def balls():
+    return render_template('balls.html')
+
 @app.route('/createUser', methods=['GET', 'POST'])
 def create_user():
     create_user_form = CreateUserForm(request.form)
@@ -206,5 +214,6 @@ def delete_customer(id):
     return redirect(url_for('retrieve_customers'))
 
 if __name__ == '__main__':
+    app.debug = True
     app.run()
 

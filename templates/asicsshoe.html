@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block title %}Tennis store - Babolat{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Shoes</title>
+  <link rel="stylesheet" href="/static/asicsshoe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  
+</head>
+<body>
+    <header class="hdr">
+      <div class="nav container">
+        <p class="logo">Shoes > Men's Shoes</p>
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+      </div>
+    </header>
+    <div class="shoe-container">
+        <nav>
+            <a href="home.html" class = 'brand'>Shoes</a>
+            <span>Today's Top Picks</span>
+            <a href="#">
+                <span class="material-icons-outlined">
+                    bx-shopping-bag
+                </span>
+            </a>
+        </nav>
+        <main>
+            <div>
+                <span>Mens</span>
+                <h1 class="title">
+                    <span class="titleText">
+                        Asics Solution Speed FF
+                    </span>
+                    <span class="titleOverlay"></span>
+                </h1>
+                <p class="description">
+                    Advantage, you. With the responsive FlyteFoam® Midsole Technology and Twisstruss system, the Solution Speed FF 2 is one of the lightest performance shoes in tennis. The Flexion Fit upper material has been improved which contours to the foot better than before, making movement seamless. Durability is also improved with added protection to the medial side for hard court sliders.
+
+Upper: FLEXION FIT PU redesigned for increased flexibility and prevents bunching at the toe box. PGUARD technology protects toe-drag damage on the medial side.
+Midsole: FLYTEFOAM cushioning is responsive comfortable. FLYTEFOAM PROPEL helps with heel to toe transition for a speedier feel when pushing off. Trusstic system helps resist unwanted twisting for added stability.
+Outsole: High Abrasion Rubber in a multi-directional tread pattern offers good durability and traction on any court surface. 
+
+Weight: 12.9 ounces (US size 10.5)
+Color: Blue Harmony / Guava
+Fit: Length is true to size. Width is medium. Arch support is medium. No break-in required.
+                </p>
+            </div>
+            <div class="showcase">
+                <div>
+                    <img src="/static/img/Asics Solution Speed FF 2 Blue Guava Men's Shoes.png" alt="">
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="option">
+                <h4>Size</h4>
+                <ul class="sizes">
+                    <li class="size-active">8</li>
+                    <li>8H</li>
+                    <li>9</li>
+                    <li>9H</li>
+                    <li>10</li>
+                </ul>
+                <div class="reviews">
+                    <h4>Reviews</h4>
+                    <ul class="stars">
+                        <li>
+                            <span class="material-icons-outlined">
+                                <i class='bx bxs-star' ></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                <i class='bx bxs-star' ></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                <i class='bx bxs-star' ></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                <i class='bx bxs-star' ></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                <i class='bx bx-star' ></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing">
+                    <h4>Price</h4>
+                    <h4 class="price">SGD $189.00</h4>
+                </div>
+                <div class="colors">
+                    <h4>Colors</h4>
+                    <ul>
+                        <li class="color color-active"></li>
+                        <li class="color"></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+        <section class="bar-bottom">
+            <div>
+                <a href="#">
+                    <span class="material-icons-outlined">
+                        <i class='bx bx-play' ></i>
+                    </span>
+                    <span>Play Video</span>
+                </a>
+            </div>
+            <div class="controls">
+                <div class="arrows">
+                    <span class="material-icons-outlined-arr-left">
+                        <i class='bx bxs-chevron-right'></i>
+                    </span>
+                    <span class="material-icons-outlined-arr-left">
+                        <i class='bx bxs-chevron-right'></i>
+                    </span>
+                </div>
+                <div>
+                    <small class="shoe-num">01</small>
+                    <div class="pagination">
+                        <span class="pag pag-active"></span>
+                        <span class="pag"></span>
+                        <span class="pag"></span>
+                    </div>
+                    <small class="shoe-total">03</small>
+                </div>
+            </div>
+            <div class="cart">
+                <button>Add To Cart</button>
+                <span class="material-icons-outlined">
+                    <i class='bx bx-heart'></i>
+                </span>
+            </div>
+        </section>
+    </div>
+    <section class="ftr">
+        <h4>About Us</h4>
+        <p>The Tennis Academy was established with the philosophy of creating a new direction in local tennis coaching and junior tennis development.<br>
+          We impart advanced techniques & tactics in tennis, coupled with FUN and guaranteed improvement.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <a href="https://instagram.com/translucien?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </section>
+    <script>
+      var nav1 = document.getElementById("nav1");
+      function showMenu(){
+        nav1.style.right = "0";
+      }
+      function hideMenu(){
+        nav1.style.right = "-200px";
+      }
+      const totop = () => window.scrollTo({top:0, behavior:"smooth"});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/formhandlertraining.js"></script>
+</body>
+</html>
+{% endblock %}

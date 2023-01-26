@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+  background:#fff;
+  margin: 0;
+  }
+  .hdr{
+    position:sticky;
+    top: 22;
+    left: 0;
+    width: 100%;
+    background: #fff !important;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%) !important;
+    z-index: 100 !important;
+  }
+  .logo{
+    font-size: 1.1rem;
+    color: #171427;
+    font-weight: 400;
+  }
+  .section{
+    padding: 4rem 0 3rem;
+  }
+  .section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #171427 !important;
+    margin-bottom: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  .shop{
+    margin-top: 2rem;
+    
+  }
+  .shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, auto)) ;
+    gap: 1.5rem;
+    padding-bottom: 30px;
+  }
+  .product-box{
+    position: relative;
+    padding: 20px;
+  }
+  .product-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .1s;
+    padding: 10px;
+  }
+  .product-box:hover .add-cart{
+    background: hsl(249,32%,17%);
+    color: #fff;
+    transition: .4s;
+  }
+  .product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom:0.5rem;
+  }
+  .price{
+    font-weight: 500;
+  }
+  .add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    color:#171427;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .add-cart:hover{
+    background: hsl(249,32%,17%);
+    color: #fff;
+  }
+  .nav{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .ftr{
+    width: 100% !important;
+    text-align: center !important;
+    padding:30px 0 !important;
+    background-color: #071B47 !important;
+    margin-top:50px !important;
+    margin-right: 20px !important;
+  }
+  .ftr h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:#C8CCD5;
+  }
+  .ftr p{
+    color: #FFFFFF;
+  }
+  .icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+  .container-fluid{
+    padding: 0 !important;
+  }
+  .navbar-brand{
+    padding-left:30px;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #000;
+  }
+  p{
+    line-height: 25px;
+  }
+  main p,
+  main span,
+  main small{
+    color: #a7a7a7;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    padding:2em 2em 0 2em;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand{
+    font-weight: 600;
+    font-size: 1.5em;
+
+  }
+  main, bar-bottom{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 1.5em;
+
+  }
+  main{
+    min-height: 20vh;
+  }
+  .title{
+    position: relative;
+  }
+  .title .titleOverlay{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: -1;
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: top-left;
+  }
+  .titleText{
+    color: #111;
+  }
+  .showcase img{
+    width: 75%;
+    transform-origin: bottom;
+  }
+  .showcase > div{
+    position: relative;
+    height: 100%;
+  }
+  .options > div
+  .options> ul{
+    padding: 0.6em 0;
+  }
+  .sizes li{
+    margin: 10px;
+    width: 3.2em;
+    height: 3.2em;
+    border: 1px #111 solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3.2em;
+    font-size: 0.8em;
+    transition: 0.3s;
+  }
+  .size-active{
+    background: #111;
+    color: #fff;
+  }
+  .reviews, .pricing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pricing .price{
+    color: #111;
+
+  }
+  .reviews h4, .pricing h4{
+    color: #ccc;
+  }
+  .reviews .stars li{
+    margin: 0;
+    cursor: default;
+  }
+  .options{
+    justify-self:end;
+  }
+  .options ul li {
+    display: inline-block !important;
+    margin: 0 0.2em !important;
+    cursor: pointer;
+  }
+  .options ul li:nth-child(1){
+    margin-left: 0;
+
+  }
+  .colors li{
+    width: 2em;
+    height: 2em;
+    background: red;
+    border-radius: 50%;
+  }
+  .bar-bottom{
+    background: #ddd;
+    padding: 1.5em;
+  }
+  .bar-bottom div, .bar-bottom a{
+    display: flex;
+    align-items: center;
+  }
+  .controls{
+    justify-content: space-evenly;
+  }
+  .arrows span{
+    font-size: 2.5em;
+  }
+  .pagination{
+    display: flex;
+    margin: 0 0.5em;
+  }
+  .pag{
+    background:#ccc;
+    width: 3em;
+    height: 0.2em;
+    margin: 0 7px;
+    transition: 0.3s;
+  }
